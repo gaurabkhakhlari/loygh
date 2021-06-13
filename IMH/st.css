@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.wal img{
+    width: 280px;
+    border: 3px solid red;
+    border-radius: 6px;
+}
+.bu img{
+    width: 50px;
+    animation: bubble 7s linear infinite;
+}
+.bu{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    bottom: -280px;
+
+}
+@keyframes bubble {
+        0%{
+            transform: translateY(0);
+            opacity: 0;
+        }   
+             50%{
+            opacity: 1;
+        }   
+         70%{
+            
+            opacity: 1;
+        }
+         100%{
+            transform: translateY(-80vh);
+            opacity: 0;
+        }      
+ 
+}
+
+
+.bu img:nth-child(1)
+{   width: 25px;
+        animation-delay: 2s;
+}
+.bu img:nth-child(2)
+{
+        animation-delay: 1s;
+}
+.bu img:nth-child(3)
+{
+        width: 25px;
+        animation-delay: 3s;
+}
+.bu img:nth-child(4)
+{
+        animation-delay: 4.5s;
+        
+}
+.bu img:nth-child(5)
+{
+        animation-delay: 3s;
+}
+.bu img:nth-child(6)
+{
+        width: 20px;
+        animation-delay: 6s;
+}
+.bu img:nth-child(7)
+{
+
+        animation-delay: 7s;
+}
